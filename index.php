@@ -5,5 +5,6 @@
     </head>
     <body>
         <?php echo '<p>Hello World</p>'; ?>
-    </body>
+
+ <a href="http://localhost/data">data</a> </body>
 </html>
