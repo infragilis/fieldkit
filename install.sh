@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install -y php8.3-common php8.3-cli
 sudo apt install -y libapache2-mod-php8.3
 #swap old var for new
-ln -s /var/www/html/ /home/fieldkit/www
+sudo ln -s /var/www/html/ /home/fieldkit/www
 sudo service apache2 restart
 
 # install docker
