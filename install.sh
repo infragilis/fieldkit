@@ -4,7 +4,7 @@ useradd -m -p $6$Jr6x2GOscd76/.7W$x9sVWXwLdNY0fzcnVQUR.wMLFfJKig/snUZC5b3wYNqR1H
 sudo usermod -a -G sudo fieldkit
 mkdir /home/fieldkit/data
 mkdir /home/fieldkit/www
-cp index.php /home/fieldkit/www/
+#cp index.php /home/fieldkit/www/html/
 chown -R fieldkit.fieldkit /home/fieldkit
 # upgrade to latest 
 sudo apt-get upgrade -y
@@ -15,6 +15,8 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 sudo apt update
 sudo apt install -y php8.3-common php8.3-cli
 sudo apt install -y libapache2-mod-php8.3
+#swap old var for new
+ln -s /var/www/html/ /home/fieldkit/www
 sudo service apache2 restart
 
 # install docker
