@@ -17,12 +17,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 sudo apt update
 sudo apt install -y php8.3-common php8.3-cli
 sudo apt install -y libapache2-mod-php8.3
-#change apache www dir (this needs line like sed below)
-sudo ln -s /var/www/html/ /home/fieldkit/www
-awk '/<FilesMatch "\^\\\.ht">/{f=1} f{sub(/denied/,"granted")} /<\/FilesMatch>/{f=0} 1' file
-<FilesMatch "^\.ht">
-        Require all granted
-</FilesMatch>
+cp apache2.conf /etc/apache2/
 sudo service apache2 restart
 
 # install docker
