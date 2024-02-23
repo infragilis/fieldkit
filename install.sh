@@ -4,8 +4,8 @@ sudo useradd -m -p $6$Jr6x2GOscd76/.7W$x9sVWXwLdNY0fzcnVQUR.wMLFfJKig/snUZC5b3wY
 sudo usermod -a -G sudo fieldkit
 sudo mkdir /home/fieldkit/data
 sudo mkdir /home/fieldkit/www
-mv index.php /home/fieldkit/www/
-cd /home/fieldkit/www/
+sudo mv index.php /home/fieldkit/www/
+sudo cd /home/fieldkit/www/
 sudo ln -s ../data data
 sudo chown -R fieldkit.fieldkit /home/fieldkit
 sudo chown -R fieldkit.www-data /home/fieldkit/www
