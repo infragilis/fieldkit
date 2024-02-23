@@ -24,6 +24,7 @@ sudo service apache2 restart
 
 # install docker
 curl -fsSL https://get.docker.com -o get-docker.sh
+sudo chmod 755 get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker fieldkit
 #update ?
