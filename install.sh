@@ -5,7 +5,7 @@ sudo usermod -a -G sudo fieldkit
 sudo mkdir /home/fieldkit/data
 sudo mkdir /home/fieldkit/www
 sudo mv index.php /home/fieldkit/www/
-sudo cd /home/fieldkit/www/
+cd /home/fieldkit/www/
 sudo ln -s ../data data
 sudo chown -R fieldkit.fieldkit /home/fieldkit
 sudo chown -R fieldkit.www-data /home/fieldkit/www
