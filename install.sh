@@ -8,8 +8,7 @@ sudo mv index.php /var/www/html/www/
 #cd /home/fieldkit/www/
 sudo ln -s ../data data
 sudo chown -R root.fieldkit /home/fieldkit
-sudo chown -R root.www-data /var/www/html/www/
-sudo chown -R root.www-data /var/www/html/www/
+sudo chown -R root.www-data /var/www/html/
 # upgrade to latest 
 sudo apt-get upgrade -y
 # add additional packages here
