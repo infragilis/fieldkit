@@ -4,12 +4,12 @@ sudo useradd -m -p $6$Jr6x2GOscd76/.7W$x9sVWXwLdNY0fzcnVQUR.wMLFfJKig/snUZC5b3wY
 sudo usermod -a -G sudo fieldkit
 sudo mkdir /home/fieldkit/data
 sudo mkdir /home/fieldkit/www
-sudo mv index.php /home/fieldkit/www/
-cd /home/fieldkit/www/
+sudo mv index.php /var/www/html/www/
+#cd /home/fieldkit/www/
 sudo ln -s ../data data
-sudo chown -R fieldkit.fieldkit /home/fieldkit
-sudo chown -R fieldkit.www-data /home/fieldkit/www
-sudo chown -R fieldkit.www-data /home/fieldkit/data
+sudo chown -R root.fieldkit /home/fieldkit
+sudo chown -R root.www-data /var/www/html/www/
+sudo chown -R root.www-data /var/www/html/www/
 # upgrade to latest 
 sudo apt-get upgrade -y
 # add additional packages here
@@ -19,7 +19,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 sudo apt update
 sudo apt install -y php8.3-common php8.3-cli
 sudo apt install -y libapache2-mod-php8.3
-cp apache2.conf /etc/apache2/
+#fix this !!!!  cp apache2.conf /etc/apache2/
 sudo service apache2 restart
 
 # install docker
