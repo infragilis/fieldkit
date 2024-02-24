@@ -16,7 +16,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 sudo apt update
 sudo apt install -y php8.3-common php8.3-cli
 sudo apt install -y libapache2-mod-php8.3
-#fix this !!!!  cp apache2.conf /etc/apache2/
+sudo cp apache2.conf /etc/apache2/
 sudo mkdir /home/fieldkit/www
 sudo mv index.php /var/www/html/
 sudo service apache2 restart
