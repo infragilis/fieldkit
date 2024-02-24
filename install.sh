@@ -1,17 +1,16 @@
 #!/bin/bash
+sudo apt-get upgrade -y
+# add additional packages here
+sudo apt install apache2 -y
 #add user/pass and sudo
 sudo useradd -m -p $6$Jr6x2GOscd76/.7W$x9sVWXwLdNY0fzcnVQUR.wMLFfJKig/snUZC5b3wYNqR1HESdN2QfcItcDpBSI9qIfFzEjoG/nVmIRWawHuGj/ -s /bin/bash fieldkit
 sudo usermod -a -G sudo fieldkit
 #build some directories and stuff
 sudo mkdir /home/fieldkit/data
-sudo mkdir /var/www/html
 sudo ln -s /home/fieldkit/data/ /var/www/html/
 sudo chown -R root.fieldkit /home/fieldkit
 sudo chown -R root.www-data /var/www/html/
-# upgrade to latest 
-sudo apt-get upgrade -y
-# add additional packages here
-sudo apt install apache2 -y
+# upgrade to latest docker
 sudo wget -qO /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
 sudo apt update
