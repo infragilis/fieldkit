@@ -2,10 +2,9 @@
 #add user/pass and sudo
 sudo useradd -m -p $6$Jr6x2GOscd76/.7W$x9sVWXwLdNY0fzcnVQUR.wMLFfJKig/snUZC5b3wYNqR1HESdN2QfcItcDpBSI9qIfFzEjoG/nVmIRWawHuGj/ -s /bin/bash fieldkit
 sudo usermod -a -G sudo fieldkit
+#build some directories and stuff
 sudo mkdir /home/fieldkit/data
-sudo mkdir /home/fieldkit/www
-sudo mv index.php /var/www/html/
-#cd /home/fieldkit/www/
+sudo mkdir /var/www/html
 sudo ln -s /home/fieldkit/data/ /var/www/html/
 sudo chown -R root.fieldkit /home/fieldkit
 sudo chown -R root.www-data /var/www/html/
@@ -19,6 +18,8 @@ sudo apt update
 sudo apt install -y php8.3-common php8.3-cli
 sudo apt install -y libapache2-mod-php8.3
 #fix this !!!!  cp apache2.conf /etc/apache2/
+sudo mkdir /home/fieldkit/www
+sudo mv index.php /var/www/html/
 sudo service apache2 restart
 
 # install docker
