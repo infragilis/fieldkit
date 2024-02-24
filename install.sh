@@ -6,7 +6,7 @@ sudo mkdir /home/fieldkit/data
 sudo mkdir /home/fieldkit/www
 sudo mv index.php /var/www/html/
 #cd /home/fieldkit/www/
-sudo ln -s ../data data
+sudo ln -s /home/fieldkit/data/ /var/www/html/
 sudo chown -R root.fieldkit /home/fieldkit
 sudo chown -R root.www-data /var/www/html/
 # upgrade to latest 
