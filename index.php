@@ -8,7 +8,7 @@
     <?php
         $ip_server = $_SERVER['SERVER_ADDR'];
         echo '<a href=/data target="_blank">Data</a>';
-        echo '<a href=/usb target="_blank">Usb</a>';
+        echo '<a href=/usb target="_blank">Usb</a><br>';
     ?>
 </body>
 </html>
