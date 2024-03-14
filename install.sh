@@ -33,7 +33,7 @@ sudo chmod 755 get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker fieldkit
 #update ?
-# install config advisor, needs 64bit, or arm docker image, still errors
+# install config advisor, needs 64bit, or arm docker image, still errors seems it's not going to be easy, busted
 # also needs a start button on www, dont want to run if not used
 #docker pull netapp/config-advisor
 #docker run -d -p 8080:8080  -e ACCEPT_EULA=true -v /opt/NetApp/ConfigAdvisorAIDE -v /opt/NetApp/ConfigAdvisorAIDE netapp/config-advisor /NetApp/launch
