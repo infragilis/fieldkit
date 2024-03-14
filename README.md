@@ -1,11 +1,11 @@
-# fieldkit
+# fieldkit install
 raspberry pi imager, advanced, set wifi, user/sudo 
 git pull this
 git clone https://github.com/infragilis/fieldkit
 ./install.sh
 
-gives you:
-#config advisor  (64 bit issue needs fixed)
+# gives you:
+# config advisor  (64 bit issue needs fixed)
 
 # http/scp/ downloads from either local or inserted usb stick
 
