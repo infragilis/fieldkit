@@ -1,4 +1,6 @@
 #!/bin/bash
+# see below for additional docker containers
+# 
 sudo apt-get upgrade -y
 # add additional packages here
 sudo apt install apache2 -y
@@ -26,6 +28,10 @@ sudo service apache2 restart
 
 # install docker
 curl -fsSL https://get.docker.com -o get-docker.sh
+# install config advisor
+#docker pull netapp/config-advisor
+#docker run -d -p 8080:8080  -e ACCEPT_EULA=true -v /opt/NetApp/ConfigAdvisorAIDE -v /opt/NetApp/ConfigAdvisorAIDE netapp/config-advisor /NetApp/launch
+
 sudo chmod 755 get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker fieldkit
