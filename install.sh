@@ -3,7 +3,11 @@
 # 
 sudo apt-get upgrade -y
 # add additional packages here
+#vuurmuur, add 8080
+sudo install ufw
+sudo ufw allow 8080
 sudo apt install apache2 -y
+sudo apt-get install ufw
 #add user/pass and sudo
 sudo useradd -m -p $6$Jr6x2GOscd76/.7W$x9sVWXwLdNY0fzcnVQUR.wMLFfJKig/snUZC5b3wYNqR1HESdN2QfcItcDpBSI9qIfFzEjoG/nVmIRWawHuGj/ -s /bin/bash fieldkit
 sudo usermod -a -G sudo fieldkit
