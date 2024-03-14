@@ -1,3 +1,8 @@
+#FAIR WARNING, this is not designed with security in mind, certificates are the devils .... simple base_64 encoded passwords in a public github ? 
+#Surprised i didn't get banned ..... 
+#purpose build, for the field .. no sec, no certs, just functionality
+
+
 # fieldkit install
 raspberry pi imager, advanced, set wifi, user/sudo 
 git pull this
