@@ -39,6 +39,7 @@ sudo usermod -aG docker fieldkit
 #update ?
 # install config advisor, needs 64bit, or arm docker image, still errors seems it's not going to be easy, busted
 # also needs a start button on www, dont want to run if not used
+# its more broken than a 1000 piece shattered mirror
 #docker pull netapp/config-advisor
 #
 docker run --privileged --rm tonistiigi/binfmt --install amd64
