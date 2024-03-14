@@ -29,6 +29,7 @@ sudo service apache2 restart
 # install docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 # install config advisor, needs 64bit, or arm docker image, still errors
+# also needs a start button on www, dont want to run if not used
 #docker pull netapp/config-advisor
 #docker run -d -p 8080:8080  -e ACCEPT_EULA=true -v /opt/NetApp/ConfigAdvisorAIDE -v /opt/NetApp/ConfigAdvisorAIDE netapp/config-advisor /NetApp/launch
 
