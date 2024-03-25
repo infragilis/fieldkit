@@ -10,7 +10,6 @@ git clone https://github.com/infragilis/fieldkit
 ./install.sh 
 
 # gives you:
-## config advisor  (64 bit issue needs fixed)
 
 ## http/scp/ downloads from either local or inserted usb stick
 
@@ -22,5 +21,9 @@ http://<yourip>/usb  all data listed from usb thumbdrive thats inserted in corre
 SCP for pulls:
 
 scp  fieldkit@192.168.200.136:/home/fieldkit/data/somefile.tgz .
-
-## ansible through docker (needs install docker and templates example)
+# coming "soon" (ToDO)
+## ansible through docker (needs install docker and netapp templates examples)
+## config advisor  (64 bit issue needs fixed, likely only raspy 4)
+## use Raspi hdmi display/desktop (ipad) for dual console on the native desktop
+## centralized online sync location
+## webdriven network GUI for WifiAP-NoAp/Eth config
